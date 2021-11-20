@@ -8,7 +8,7 @@ const app = express();
 
 // an http method function
 app.get('/', (req, res) => {
-    res.sendFile('/static/index.html', { root: __dirname })
+    res.sendFile('/static/index.HTML', { root: __dirname })
   })
 
   // to be able to access the body of the request
@@ -21,7 +21,7 @@ app.get('/guest', (req, res) => {
 })
 
 app.get('/admin', (req, res) => {
-  res.sendFile('/static/admin.html', { root: __dirname })
+  res.sendFile('/static/admin.HTML', { root: __dirname })
 })
 
 // login info for front end
